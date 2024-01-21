@@ -4,6 +4,7 @@
   "package": "ponchisaohosting.xyz.pzoom.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "TitleScreenMixin"
   ],
   "client": [
   ],
