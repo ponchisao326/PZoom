@@ -60,7 +60,7 @@ public class TitleScreenMixin extends Screen {
 
                 // Puedes personalizar la lógica según tus necesidades
                 String buttonText = button.getMessage().getString();
-                if (buttonText.equalsIgnoreCase("singleplayer") || buttonText.equalsIgnoreCase("multiplayer") || buttonText.equalsIgnoreCase("realms")) {
+                if (buttonText.equalsIgnoreCase("singleplayer") || buttonText.equalsIgnoreCase("multiplayer") || buttonText.equalsIgnoreCase("minecraft realms")) {
                     // Oculta los botones de singleplayer, multiplayer y realms
                     button.visible = false;
                 }
