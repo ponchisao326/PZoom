@@ -1,11 +1,15 @@
 package ponchisaohosting.xyz.pzoom.mixin;
 
+import com.google.common.util.concurrent.Runnables;
 import net.minecraft.client.gui.Drawable;
 import net.minecraft.client.gui.screen.ConnectScreen;
+import net.minecraft.client.gui.screen.CreditsScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.widget.PressableTextWidget;
+import net.minecraft.client.gui.widget.TextWidget;
 import net.minecraft.client.network.ServerAddress;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.resource.language.I18n;
@@ -30,6 +34,7 @@ public class TitleScreenMixin extends Screen {
     private static final String CONNECT_BUTTON_TEXT = "BLANCHINIILAND 3";
     private static final int BUTTON_WIDTH = 200;
     private static final int BUTTON_HEIGHT = 20;
+    private static final Text MENU = Text.literal("Menu by PonchisaoHosting");
 
     protected TitleScreenMixin(Text title) {
         super(title);
@@ -48,6 +53,11 @@ public class TitleScreenMixin extends Screen {
         }).dimensions(this.width / 2 - 100, y, BUTTON_WIDTH, BUTTON_HEIGHT).build();
 
         this.addDrawableChild(button);
+
+        int i = this.textRenderer.getWidth(MENU);
+        int j = this.width - i - 2;
+
+        this.addDrawableChild(new TextWidget(j, this.height - 20, i, 10, MENU, this.textRenderer));
     }
 
     @Inject(method = "init", at = @At("TAIL"))
@@ -60,7 +70,7 @@ public class TitleScreenMixin extends Screen {
 
                 // Puedes personalizar la lógica según tus necesidades
                 String buttonText = button.getMessage().getString();
-                if (buttonText.equalsIgnoreCase("singleplayer") || buttonText.equalsIgnoreCase("multiplayer") || buttonText.equalsIgnoreCase("minecraft realms")) {
+                if (buttonText.equalsIgnoreCase("singleplayer") || buttonText.equalsIgnoreCase("multiplayer") || buttonText.equalsIgnoreCase("minecraft realms") || buttonText.equalsIgnoreCase("accessibility") || buttonText.equalsIgnoreCase("language")) {
                     // Oculta los botones de singleplayer, multiplayer y realms
                     button.visible = false;
                 }
