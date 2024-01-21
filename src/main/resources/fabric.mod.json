@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "pzoom",
+  "version": "${version}",
+  "name": "PZoom",
+  "description": "Mod made to have a zoom in minecraft",
+  "authors": ["Ponchisao326"],
+  "contact": {
+    "repo": "https://github.com/ponchisao326/PZoom"
+  },
+  "license": "MIT",
+  "icon": "assets/pzoom/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ponchisaohosting.xyz.pzoom.client.PZoomClient"
+    ],
+    "main": [
+      "ponchisaohosting.xyz.pzoom.PZoom"
+    ]
+  },
+  "mixins": [
+    "pzoom.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
