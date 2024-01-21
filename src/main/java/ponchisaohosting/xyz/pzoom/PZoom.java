@@ -10,6 +10,6 @@ public class PZoom implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        LOGGER.info("PZOOM: Initiating...");
     }
 }
