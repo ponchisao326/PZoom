@@ -12,11 +12,11 @@
   "icon": "assets/pzoom/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "ponchisaohosting.xyz.pzoom.client.PZoomClient"
-    ],
     "main": [
       "ponchisaohosting.xyz.pzoom.PZoom"
+    ],
+    "client": [
+      "ponchisaohosting.xyz.pzoom.client.PZoomClient"
     ]
   },
   "mixins": [
