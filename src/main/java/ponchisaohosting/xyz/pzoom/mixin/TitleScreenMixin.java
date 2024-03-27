@@ -14,11 +14,14 @@ import net.minecraft.client.network.ServerAddress;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.minecraft.client.gui.Element;
+import net.minecraft.client.util.math.MatrixStack;
+
 
 
 
@@ -35,6 +38,7 @@ public class TitleScreenMixin extends Screen {
     private static final int BUTTON_WIDTH = 200;
     private static final int BUTTON_HEIGHT = 20;
     private static final Text MENU = Text.literal("Menu by PonchisaoHosting");
+    private boolean modsButtonAdjusted = false;
 
     protected TitleScreenMixin(Text title) {
         super(title);
@@ -68,11 +72,37 @@ public class TitleScreenMixin extends Screen {
             if (element instanceof ButtonWidget) {
                 ButtonWidget button = (ButtonWidget) element;
 
-                // Puedes personalizar la lógica según tus necesidades
                 String buttonText = button.getMessage().getString();
                 if (buttonText.equalsIgnoreCase("singleplayer") || buttonText.equalsIgnoreCase("multiplayer") || buttonText.equalsIgnoreCase("minecraft realms") || buttonText.equalsIgnoreCase("accessibility") || buttonText.equalsIgnoreCase("language")) {
                     // Oculta los botones de singleplayer, multiplayer y realms
                     button.visible = false;
+                }
+            }
+        }
+    }
+
+    @Inject(method = "render", at = @At("HEAD"))
+    private void renderInject(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        // Verifica si ya se ha ajustado la posición del botón "mods"
+        if (!modsButtonAdjusted) {
+            List<? extends Element> elements2 = ((TitleScreen) (Object) this).children();
+
+            for (Element element2 : elements2) {
+                if (element2 instanceof ButtonWidget) {
+                    ButtonWidget button2 = (ButtonWidget) element2;
+
+                    String buttonText2 = button2.getMessage().getString();
+                    if (buttonText2.equalsIgnoreCase("mods")) {
+                        final int modButtonX = button2.getX();
+                        final int modButtonY = button2.getY();
+                        final int modButtonFinal = modButtonY + 50;
+
+                        button2.setPos(modButtonX, modButtonFinal);
+                        modsButtonAdjusted = true;
+                        break;
+
+
+                    }
                 }
             }
         }
