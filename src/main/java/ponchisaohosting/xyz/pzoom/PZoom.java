@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.io.InputStream;
 
 public class PZoom implements ModInitializer {
-    public static final String MOD_ID = "";
+    public static final String MOD_ID = "pzoom";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     private InputStream smallIconStream;
     private InputStream bigIconStream;

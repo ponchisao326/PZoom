@@ -17,7 +17,7 @@ import ponchisaohosting.xyz.pzoom.PZoom;
 public class onDeathScreen {
     @Inject(method="onDeath", at=@At("TAIL"))
     private void died(DamageSource damageSource, CallbackInfo info){
-        PZoom.LOGGER.info(damageSource.getName());
+        PZoom.LOGGER.info(damageSource.getName() + "Death Mixin");
 
         PlayerEntity player = (PlayerEntity) (Object) this;
         sendDeathMessageToAllPlayers(player);

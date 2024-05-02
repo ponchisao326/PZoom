@@ -10,6 +10,7 @@ repositories {
     maven { url 'https://maven.fabricmc.net/' }
     maven { url 'https://libraries.minecraft.net' }
     maven { url 'https://files.minecraftforge.net/maven' }
+    maven { url "https://maven.terraformersmc.com/releases/" }
 }
 
 // Define the version of the Fabric API
@@ -20,6 +21,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    // Mod Menu
+    modApi "com.terraformersmc:modmenu:5.0.1"
 
     // Fabric API for 1.19.3
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabricApiVersion}"
