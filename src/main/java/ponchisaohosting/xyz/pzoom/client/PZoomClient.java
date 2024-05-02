@@ -5,8 +5,10 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 import ponchisaohosting.xyz.pzoom.event.KeyInputHandler;
 import ponchisaohosting.xyz.pzoom.gui.CustomMainMenu;
+import ponchisaohosting.xyz.pzoom.gui.LoadingScreen;
 
 @Environment(EnvType.CLIENT)
 public class PZoomClient implements ClientModInitializer {
@@ -15,8 +17,9 @@ public class PZoomClient implements ClientModInitializer {
     public void onInitializeClient() {
         KeyInputHandler.register();
         ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-            // Establece la pantalla personalizada como la pantalla principal
-            MinecraftClient.getInstance().setScreen(new CustomMainMenu());
+            // Mostrar la pantalla de carga antes de cargar la pantalla principal del juego
+            LoadingScreen loadingScreen = new LoadingScreen();
+            MinecraftClient.getInstance().setScreen(loadingScreen);
         });
     }
 }

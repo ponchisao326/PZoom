@@ -28,6 +28,7 @@ public class PZoom implements ModInitializer {
 
                     if (smallIconStream != null && bigIconStream != null) {
                         MinecraftClient.getInstance().getWindow().setIcon(asInputSupplier(smallIconStream), asInputSupplier(bigIconStream));
+                        MinecraftClient.getInstance().getWindow().setTitle("Blanchiniiland 3");
                         // Desregistrando el evento para evitar que se llame más de una vez
                         ClientTickEvents.END_CLIENT_TICK.register((client2) -> {});
                     } else {
