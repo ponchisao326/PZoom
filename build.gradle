@@ -1,4 +1,7 @@
 plugins {
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
     id 'fabric-loom' version '1.2-SNAPSHOT'
 }
 
@@ -11,6 +14,7 @@ repositories {
     maven { url 'https://libraries.minecraft.net' }
     maven { url 'https://files.minecraftforge.net/maven' }
     maven { url "https://maven.terraformersmc.com/releases/" }
+    maven { url "https://repo.spongepowered.org/maven/" }
 }
 
 // Define the version of the Fabric API
@@ -23,6 +27,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     // Mod Menu
     modApi "com.terraformersmc:modmenu:5.0.1"
+
+    include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.2")))
 
     // Fabric API for 1.19.3
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabricApiVersion}"

@@ -6,6 +6,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.resource.InputSupplier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ponchisaohosting.xyz.pzoom.loading.SoundLoader;
 
 import java.io.InputStream;
 
@@ -19,6 +20,8 @@ public class PZoom implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("PZOOM: Iniciando...");
         LOGGER.info("Autor: PonchisaoHosting (Ponchisao326)");
+
+        SoundLoader.registerSounds();
 
         ClientTickEvents.END_CLIENT_TICK.register((client) -> {
             if (MinecraftClient.getInstance().getWindow() != null) {
@@ -39,7 +42,6 @@ public class PZoom implements ModInitializer {
                 }
             }
         });
-
     }
 
 

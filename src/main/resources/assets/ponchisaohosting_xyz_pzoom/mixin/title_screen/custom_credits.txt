@@ -1,121 +1,39 @@
-Creditos de Prueba!
+Testing credits
 
-Este es un test custom credito con kits diferentes estilos Espero que te guste!
+These
+are
+some
+Testing
+credits
+I
+made 
+for 
+checking 
+if
+The
+show
+credits
+is
+working
+propertly
 
-Gracias por probar!
+FabricMC
+is
+the
+goat
 
-Este es un parrafo mas extenso con mas formatos aplicados:
+Simple
+but
+proud 
+of
+my
+work
 
-Este texto es verde y negrita.
-Este texto es azul y cursiva.
-Este texto es rojo y tachado.
-Este texto es magenta y subrayado.
-Este texto es amarillo y cursiva.
-Este texto es blanco y subrayado.
-Este texto es negro y negrita.
-Este texto es azul oscuro y tachado.
-Este texto es verde oscuro y cursiva.
-Este texto es cian oscuro y subrayado.
-Este texto es rojo oscuro.
-Este texto es purpura oscuro y negrita.
-Este texto es dorado y cursiva.
-Este texto es gris claro y subrayado.
-Este texto es gris oscuro.
-Este texto es azul claro y negrita.
-Gracias por leer!
-
-Creditos adicionales!
-
-Los creditos adicionales estan aqui para agradecer a personas, proyectos, organizaciones y mas por su contribucion, inspiracion y servicios prestados.
-
-Gracias a Minecraft por hacer posible nuestros proyectos.
-
-Gracias a la Comunidad Minecraft por compartir nuestras creaciones.
-
-Gracias a OpenAI por proporcionar una increible plataforma para la creacion de contenido.
-
-Gracias a FabricMC por desarrollar una increible modificacion para Minecraft.
-
-Gracias a GitHub por su excelente herramienta de desarrollo.
-
-Gracias a Stack Overflow por su comunidad siempre util.
-
-Gracias a Google por brindar una increible herramienta de busqueda.
-
-Gracias a YouTube por inspirarnos con su contenido.
-
-Gracias a Twitter por brindar autenticidad y relaciones.
-
-Gracias a Reddit por conectar a comunidades.
-
-Gracias a Discord por fomentar la comunicacion.
-
-Gracias a Spotify por compartir musica con el mundo.
-
-Gracias a Netflix por proporcionar entretenimiento.
-
-Gracias a Amazon por facilitar las compras por Internet.
-
-Gracias a Twitch por promover el entretenimiento en streaming.
-
-Gracias a Adobe por crear herramientas de produccion de multimedia.
-
-Gracias a Microsoft por desarrollar sistemas operativos.
-
-Gracias a Apple por innovar en electronica.
-
-Gracias a Samsung por brindar innovacion.
-
-Gracias a Sony por proporcionar entretenimiento.
-
-Gracias a Nintendo por desarrollar videojuegos.
-
-Gracias a Epic Games por desarrollar plataformas de videojuegos.
-
-Gracias a Unity por facilitar el desarrollo de videojuegos.
-
-Gracias a Valve por desarrollar plataformas de videojuegos.
-
-Gracias a NVIDIA por desarrollar hardware.
-
-Gracias a AMD por desarrollar procesadores.
-
-Gracias a Intel por desarrollar procesadores.
-
-Gracias a Raspberry Pi por fomentar proyectos educativos.
-
-Gracias a Arduino por brindar herramientas para proyectos de prototipado.
-
-Gracias a GNU por desarrollar herramientas de software libre.
-
-Gracias a Linux por proporcionar sistemas operativos gratuitos.
-
-Gracias a Ubuntu por desarrollar un sistema operativo gratuito.
-
-Gracias a Debian por desarrollar un sistema operativo gratuito.
-
-Gracias a Android por desarrollar un sistema operativo para telefonos moviles.
-
-Gracias a iOS por desarrollar un sistema operativo para telefonos moviles.
-
-Gracias a Mozilla por desarrollar navegadores web.
-
-Gracias a Google Chrome por desarrollar navegadores web.
-
-Gracias a Safari por desarrollar navegadores web.
-
-Gracias a Opera por desarrollar navegadores web.
-
-Gracias a Edge por desarrollar navegadores web.
-
-Gracias a Brave por desarrollar navegadores web.
-
-Gracias a Vivaldi por desarrollar navegadores web.
-
-Gracias a DuckDuckGo por proporcionar un buscador privado.
-
-Gracias a Wikipedia por brindar conocimiento gratuito.
-
-Gracias a Wikimedia por brindar recursos gratuitos.
-
-Gracias a GitHub por proporcionar servicios de hospedaje.
+I
+would
+work
+in
+more
+Fabric
+proyects
+<3
